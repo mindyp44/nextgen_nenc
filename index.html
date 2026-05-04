@@ -289,6 +289,10 @@ section{padding:68px 0}.section-head{margin-bottom:28px}h2{font-family:'Bebas Ne
 //                and click the coordinates at the top of the menu to copy them.
 //                Example:  lat: 36.3741,  lon: -75.9318
 //                Without these, distance sorts by county center (less accurate).
+//   contact    — (optional) Email address for the youth leader or church office.
+//                When present, a "Message Leader" button appears linking to a
+//                pre-filled email. Leave as "" to hide the button entirely.
+//                Example: contact: "youthleader@mychurch.com"
 //   photo      — (optional) URL of a church exterior photo.
 //                Best sources: church website, Google Maps street view screenshot,
 //                or ask the church for a building photo. Leave as "" to show
@@ -305,6 +309,7 @@ const churches = [
     filters: "middle high sunday jarvisburg harbinger",
     badge: "Great First Visit",
     photo: "",
+    contact: "Jarvisburgchurch@outlook.com",
     tags: ["Grades 6–12", "Sun 6PM", "Welcoming", "Discussion + Bible"],
     description: "Youth ministry for 6th through 12th grade with Sunday youth meeting and Sunday School options.",
     goodFit: "you want a welcoming group where you can ask questions and ease in.",
@@ -324,6 +329,7 @@ const churches = [
     filters: "middle high powells point harbinger sunday",
     badge: "",
     photo: "",
+    contact: "",
     tags: ["Middle + High", "Flexible Schedule", "Smaller Group"],
     description: "Students have Sunday School and a youth group that meets at least twice monthly. Exact event dates should be confirmed with the church.",
     goodFit: "you prefer a smaller, more flexible group.",
@@ -342,6 +348,7 @@ const churches = [
     filters: "middle high wednesday shawboro providence",
     badge: "",
     photo: "",
+    contact: "",
     tags: ["Middle + High", "Wed 7PM", "Bible Teaching", "Community"],
     description: "Youth group for middle and high school students with Bible teaching, fellowship, and student connection.",
     goodFit: "you want strong teaching and consistent weekly rhythm.",
@@ -360,6 +367,7 @@ const churches = [
     filters: "middle high sunday sawyers creek camden",
     badge: "",
     photo: "",
+    contact: "",
     tags: ["Youth", "Sun 5–6:30PM"],
     description: "Sunday afternoon youth gathering. Families should verify seasonal schedules before attending.",
     goodFit: "",
@@ -379,6 +387,7 @@ const churches = [
     filters: "middle high sunday elizabeth city",
     badge: "",
     photo: "",
+    contact: "",
     tags: ["Grades 6–12", "Sundays 6–8PM"],
     description: "NC/YOUTH is for middle and high school students who want a place to belong, grow, and explore faith together.",
     goodFit: "",
@@ -398,13 +407,14 @@ const churches = [
     filters: "middle high wednesday elizabeth city",
     badge: "",
     photo: "",
+    contact: "",
     tags: ["Grades 6–12", "Wed 6:30PM"],
     description: "FOL YTH meets in a dedicated youth space for middle and high school students.",
     goodFit: "",
     links: {
-      web: "",
-      instagram: "",
-      fb: ""
+      web: "https://www.folchurch.com/elizabeth-city/",
+      fb: "https://www.facebook.com/folec",
+      instagram: "https://www.instagram.com/folecchurch/"
     }
   },
   {
@@ -417,13 +427,14 @@ const churches = [
     filters: "middle high sunday wednesday edenton",
     badge: "",
     photo: "",
+    contact: "",
     tags: ["Wed 6:30–7:30PM", "Sun 5:30–8PM"],
     description: "Youth Bible study on Wednesdays, plus Sunday night meal, games, worship, teaching, and small groups.",
     goodFit: "",
     links: {
-      web: "",
-      instagram: "",
-      fb: ""
+      web: "https://www.visitopendoor.com/edenton",
+      fb: "https://www.facebook.com/odyouthedenton/",
+      instagram: "https://www.instagram.com/odyouthedenton/"
     }
   },
   {
@@ -436,13 +447,13 @@ const churches = [
     filters: "middle high sunday duck obx",
     badge: "",
     photo: "",
+    contact: "office@duckchurch.org",
     tags: ["Grades 6–12", "Sundays 5–7PM"],
     description: "D6 youth gathering with dinner, games, worship, a message, and small groups.",
     goodFit: "",
     links: {
-      web: "",
-      instagram: "",
-      fb: ""
+      web: "https://www.duckchurch.org/",
+      fb: "https://www.facebook.com/p/Duck-Church-100064275056027/"
     }
   },
   {
@@ -455,12 +466,13 @@ const churches = [
     filters: "middle high wednesday moyock",
     badge: "",
     photo: "",
+    contact: "info@fbcmoyock.com",
     tags: ["Middle + High", "Wed 6PM"],
     description: "Student Worship for middle and high school students, with biblical teaching and student ministry connection.",
     goodFit: "",
     links: {
-      web: "",
-      fb: ""
+      web: "https://www.fbcmoyock.com/",
+      fb: "https://www.facebook.com/FBCMoyock/"
     }
   },
   {
@@ -473,6 +485,7 @@ const churches = [
     filters: "middle high coinjock currituck",
     badge: "",
     photo: "",
+    contact: "",
     tags: ["Ages 12–18", "Confirm Schedule"],
     description: "Youth group for ages 12–18 with serving opportunities, mission work, summer camps, and Christian concerts throughout the year.",
     goodFit: "you want a group that goes beyond weekly meetings into real-world service and mission.",
@@ -492,12 +505,15 @@ const churches = [
     filters: "middle high friday elizabeth city pasquotank",
     badge: "",
     photo: "",
+    contact: "",
     tags: ["Grades 6–12", "Fri 7:30–9:30PM", "Non-Denom", "Revival-Focused"],
     description: "FORGE (Forerunners Of Revival, Growth & Equipping) is Forerunner Church's youth ministry for 6th–12th grade students meeting Friday nights.",
     goodFit: "you're looking for a Spirit-filled, presence-focused environment with energy and worship.",
     links: {
       web: "https://www.iforerunner.org/",
-      fb: "https://www.facebook.com/forerunnerChurch/"
+      fb: "https://www.facebook.com/forerunnerChurch/",
+      instagram: "https://www.instagram.com/forerunnerchurchec/",
+      youtube: "https://www.youtube.com/@Forerunner_Church"
     }
   },
   {
@@ -510,11 +526,115 @@ const churches = [
     filters: "middle high sunday wednesday south mills camden",
     badge: "",
     photo: "",
+    contact: "",
     tags: ["Teen Ministry", "Sun 9AM + 10AM", "Wed 7PM", "Bible-Focused"],
     description: "Teen ministry for middle and high school students with Sunday morning youth classes and Wednesday evening Bible study. Also participates in summer camp through Roanoke Christian Camp.",
     goodFit: "you want consistent biblical teaching in a smaller, community-rooted church.",
     links: {
-      web: "https://www.thesouthmillschurch.com/teen-ministry.html"
+      web: "https://www.thesouthmillschurch.com/teen-ministry.html",
+      fb: "https://www.facebook.com/147218435323590",
+      youtube: "https://www.youtube.com/@southmillschurchofchrist1544"
+    }
+  },
+  {
+    initials: "BSM",
+    name: "Berea Student Ministry",
+    location: "Elizabeth City · Pasquotank Co.",
+    county: "Pasquotank",
+    lat: 36.3012,
+    lon: -76.2198,
+    filters: "middle high sunday elizabeth city berea",
+    badge: "",
+    photo: "",
+    contact: "",
+    tags: ["Grades 6–12", "Sun 6:30PM", "Worship", "Bible Teaching"],
+    description: "BBSM exists to impact Elizabeth City teens with the Gospel of Christ. Sunday nights feature worship and relevant teaching from the Word of God.",
+    goodFit: "you want a Sunday night group with energetic worship and Gospel-centered teaching.",
+    links: {
+      web: "https://www.bereaone.org/berea-ministries",
+      fb: "https://www.facebook.com/bereastudentministry/",
+      instagram: "https://www.instagram.com/bereastudentmin/"
+    }
+  },
+  {
+    initials: "FPS",
+    name: "Forest Park Students",
+    location: "Elizabeth City · Pasquotank Co.",
+    county: "Pasquotank",
+    lat: 36.3120,
+    lon: -76.2310,
+    filters: "middle high sunday elizabeth city forest park",
+    badge: "",
+    photo: "",
+    contact: "info@forestparkchurch.com",
+    tags: ["Grades 6–12", "Sun 11AM", "Bi-Monthly Events", "Community-Focused"],
+    description: "FPS meets during the 11AM Sunday service in a designated student section for worship, then gathers in the lobby for community and devotion. Student events run 5-7PM every other month for connection and fun.",
+    goodFit: "you want a welcoming Sunday morning group with regular evening events to build deeper friendships.",
+    links: {
+      web: "https://www.forestparkchurch.com/students",
+      fb: "https://www.facebook.com/forestparklive/",
+      instagram: "https://www.instagram.com/forestparkchurch/",
+      youtube: "http://youtube.com/forestparkchurch"
+    }
+  },
+  {
+    initials: "GAG",
+    name: "Grandy Assembly of God",
+    location: "Grandy · Currituck Co.",
+    county: "Currituck",
+    lat: 36.2232,
+    lon: -75.8912,
+    filters: "middle high grandy currituck",
+    badge: "",
+    photo: "",
+    contact: "",
+    tags: ["Youth Ministry", "Confirm Schedule"],
+    description: "Grandy Assembly of God serves the Currituck County community with youth ministry programming. Contact the church directly to confirm current youth meeting times and details.",
+    goodFit: "you are in the Grandy area and looking for a Spirit-filled community close to home.",
+    links: {
+      web: "https://www.grandyag.org/ministries",
+      fb: "https://www.facebook.com/grandyassemblyofgod/"
+    }
+  },
+  {
+    initials: "ROT",
+    name: "Rooted Youth — Church of the OBX",
+    location: "Kill Devil Hills · Dare Co. / OBX",
+    county: "Dare",
+    lat: 35.9676,
+    lon: -75.6285,
+    filters: "middle high sunday wednesday tuesday kill devil hills dare obx",
+    badge: "",
+    photo: "",
+    contact: "rootedyouthobx@gmail.com",
+    tags: ["Grades 6–12", "MS: Wed 6PM", "HS: Sun 6–8PM", "Tue 6:30PM"],
+    description: "Rooted Youth exists to encourage, empower, and equip middle and high school students to love God, love others, and live on mission. Middle school meets Wednesdays at the YMCA in Nags Head. High school meets Sunday nights 6-8PM and Tuesday nights 6:30-8:30PM.",
+    goodFit: "you want an active group with multiple meeting options and a strong sense of mission and community.",
+    links: {
+      web: "https://churchobx.com/obx-youth/",
+      fb: "https://www.facebook.com/CHOBXYouth",
+      instagram: "https://www.instagram.com/rooted_youth_obx/",
+      youtube: "https://www.youtube.com/channel/UCk1t5NClCQyfDc6AjQXSQ4A"
+    }
+  },
+  {
+    initials: "NHC",
+    name: "New Hope Christian Fellowship",
+    location: "Elizabeth City · Pasquotank Co.",
+    county: "Pasquotank",
+    lat: 36.2748,
+    lon: -76.2412,
+    filters: "middle high elizabeth city pasquotank new hope",
+    badge: "",
+    photo: "",
+    contact: "nhcfec@gmail.com",
+    tags: ["Youth Group", "Confirm Schedule", "Non-Denom"],
+    description: "New Hope Christian Fellowship is a non-denominational church in Elizabeth City with an active youth group. Contact the church directly to confirm current youth meeting times and details.",
+    goodFit: "you are looking for a non-denominational, Spirit-filled community in the Elizabeth City area.",
+    links: {
+      web: "https://nhcfec.org/",
+      fb: "https://www.facebook.com/nhcfec/",
+      instagram: "https://www.instagram.com/nhcfec/"
     }
   }
 ];
@@ -592,10 +712,11 @@ function buildCard(church, distMi) {
       <div class="card-body">
         <div class="tags">${tagsHTML}</div>
         <p>${church.description}${goodFitHTML}</p>
-        <div class="card-actions">
-          <button class="smallbtn">Message Leader</button>
-          <button class="smallbtn secondary">Plan Visit</button>
-        </div>
+        ${church.contact
+          ? `<div class="card-actions">
+              <a class="smallbtn" href="mailto:${church.contact}?subject=NextGen NENC — Youth Group Visit Inquiry&body=Hi%2C%0A%0AI found your youth group on NextGen NENC and my student is interested in visiting. Could you tell us more about what to expect on a first visit%3F%0A%0AThank you!">Message Leader</a>
+             </div>`
+          : ''}
         ${socialsHTML ? `<div class="socials">${socialsHTML}</div>` : ''}
       </div>
     </article>`;
