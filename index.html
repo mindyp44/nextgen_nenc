@@ -93,11 +93,14 @@ section{padding:68px 0}.section-head{margin-bottom:28px}h2{font-family:'Bebas Ne
   </div>
 </div>
 <div class="panel" style="margin-bottom:18px">
-  <div class="label" style="margin-bottom:10px">Support the Mission</div>
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+    <div class="label" style="margin-bottom:0">Support the Mission</div>
+    <span style="background:var(--d3);border:1px solid var(--border);color:var(--muted);font-size:9px;font-weight:900;letter-spacing:2px;text-transform:uppercase;padding:3px 8px;border-radius:3px">Coming Soon</span>
+  </div>
   <h2 style="font-size:32px;margin-bottom:12px">Help Make <span>IGNITE Happen.</span></h2>
   <p class="bodycopy" style="margin-bottom:8px">Every dollar goes directly toward the event. No overhead, no organization — just the venue, the sound, and the night itself.</p>
-  <p class="bodycopy" style="margin-bottom:20px">Give what you can.</p>
-  <div style="text-align:center;margin-bottom:24px"><a class="btn" href="#leaders">Support IGNITE →</a></div>
+  <p class="bodycopy" style="margin-bottom:20px">Give what you can. Giving options will be available soon.</p>
+  <div style="text-align:center;margin-bottom:24px"><a class="btn" style="opacity:.45;cursor:default;pointer-events:none">Support IGNITE — Coming Soon</a></div>
 
   <div class="label" style="margin-bottom:10px">Volunteer at IGNITE</div>
   <p class="bodycopy" style="margin-bottom:16px">Can't give financially? Volunteer your time. We need people as much as we need dollars.</p>
@@ -129,7 +132,12 @@ section{padding:68px 0}.section-head{margin-bottom:28px}h2{font-family:'Bebas Ne
   </div>
   <div style="text-align:center"><a class="btn outline" href="#leaders">Sign Up to Volunteer</a></div>
 </div>
-<div class="ignite-band"><div><div class="label">Stay connected</div><h2 style="font-size:38px">Follow <span>@IGNITENENC</span></h2><p>Follow for event updates, church spotlights, volunteer opportunities, and community highlights as IGNITE NENC 2026 takes shape.</p></div><form class="notify-form"><input placeholder="Email for updates"><button type="button">Notify Me</button></form></div></div></div></section>
+<div class="ignite-band"><div><div class="label">Stay connected</div><h2 style="font-size:38px">Follow <span>@IGNITENENC</span></h2><p>Follow for event updates, church spotlights, volunteer opportunities, and community highlights as IGNITE NENC 2026 takes shape.</p></div><form class="notify-form" action="https://formspree.io/f/xaqveane" method="POST">
+  <input type="email" name="email" placeholder="Email for updates" required>
+  <input type="hidden" name="_subject" value="IGNITE NENC — Notify Me signup">
+  <input type="text" name="_gotcha" style="display:none">
+  <button type="submit">Notify Me</button>
+</form></div></div></div></section>
 <section class="dark" id="faq"><div class="container"><div class="section-head"><div class="label">Common Questions</div><h2>FAQs for students, parents, and <span>church leaders.</span></h2><p>Everything students, parents, and church leaders need to know.</p></div>
 <div class="faq-group"><div class="faq-group-title"><div class="faq-mark">NG</div><div><h3>NextGen NENC Platform</h3><p>Questions about the directory and connection platform.</p></div></div><details open><summary>Why does this platform exist?</summary><p>Students across Northeast North Carolina often do not know where to start when looking for a youth group. This platform makes it simple to discover real youth ministry options in one place.</p></details><details><summary>Is NextGen NENC owned by one church?</summary><p>No. It is a shared connection tool designed to support local churches across the region, not compete with them.</p></details><details><summary>Is the platform free?</summary><p>Yes. The goal is to make it easy for students, families, and churches to connect without cost being a barrier.</p></details></div>
 <div class="faq-group"><div class="faq-group-title"><div class="faq-mark">ST</div><div><h3>Students</h3><p>Questions students may be wondering before they show up.</p></div></div><details open><summary>What if I do not know anyone?</summary><p>That is exactly why this exists. Youth leaders expect new students and want to help them feel welcome.</p></details><details><summary>Can I bring a friend?</summary><p>Yes. Most youth groups welcome friends, even if they do not attend that church.</p></details><details><summary>Do I have to commit?</summary><p>No. Visiting once does not obligate you to join anything. That said, our hope is that every student finds a youth group they want to keep coming back to. Real community is built over time, and that is exactly what this is all about.</p></details><details><summary>What if I am not sure what I believe?</summary><p>You can still come. A good youth group is a place to ask questions, learn, and be treated with respect.</p></details></div>
@@ -184,7 +192,7 @@ section{padding:68px 0}.section-head{margin-bottom:28px}h2{font-family:'Bebas Ne
            3. Replace YOUR_FORM_ID below with your actual Form ID
            That's it — submissions go straight to your email.
            ================================================ -->
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display:grid;gap:14px">
+      <form action="https://formspree.io/f/mojreyqp" method="POST" style="display:grid;gap:14px">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
           <div>
             <label style="display:block;font-size:10px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:6px">First Name</label>
@@ -218,6 +226,9 @@ section{padding:68px 0}.section-head{margin-bottom:28px}h2{font-family:'Bebas Ne
           <label id="messageLabel" style="display:block;font-size:10px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Message</label>
           <textarea id="messageField" name="message" rows="5" style="width:100%;background:var(--d3);border:1px solid var(--border);border-radius:6px;color:white;padding:13px 15px;font-family:'Montserrat';font-size:12px;font-weight:700;resize:vertical" placeholder="Tell us a little about yourself or your question…"></textarea>
         </div>
+        <!-- Formspree hidden fields -->
+        <input type="hidden" name="_subject" value="New message from NextGen NENC">
+        <input type="text" name="_gotcha" style="display:none">
         <button type="submit" class="btn" style="width:100%;text-align:center">Send Message</button>
         <p style="font-size:10px;color:var(--muted);text-align:center;margin:0">We'll respond within a few days. This form is monitored by the NextGen NENC team.</p>
       </form>
