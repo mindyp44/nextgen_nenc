@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{--fire:#E8620A;--fire2:#FF8C2E;--black:#080808;--d1:#0F0F0F;--d2:#161616;--d3:#222;--white:#fff;--muted:rgba(255,255,255,.6);--border:rgba(255,255,255,.12)}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'Montserrat',sans-serif;background:var(--black);color:var(--white);overflow-x:hidden}a{text-decoration:none;color:inherit}.container{max-width:1080px;margin:0 auto;padding:0 24px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;overflow-x:hidden}body{font-family:'Montserrat',sans-serif;background:var(--black);color:var(--white);overflow-x:hidden}a{text-decoration:none;color:inherit}.container{max-width:1080px;margin:0 auto;padding:0 24px}
 section{scroll-margin-top:120px}
 nav{height:64px;background:rgba(8,8,8,.96);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:10}.logo{font-family:'Bebas Neue';font-size:28px;letter-spacing:4px}.logo span{color:var(--fire)}.navlinks{display:flex;gap:18px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.mobile-nav{display:none}.navlinks a:hover{color:var(--fire2)}.btn,.navbtn{background:var(--fire);color:white;border:0;border-radius:4px;padding:12px 22px;font-size:11px;font-weight:900;letter-spacing:1.7px;text-transform:uppercase;cursor:pointer;display:inline-block}.btn:hover,.navbtn:hover{background:var(--fire2)}.btn.outline{background:transparent;border:2px solid rgba(255,255,255,.22)}
 .banner{background:var(--d2);border-bottom:1px solid var(--border);padding:12px 24px;text-align:center;color:var(--muted);font-size:13px}.banner b{color:white}.badge{background:rgba(232,98,10,.15);color:var(--fire2);border:1px solid rgba(232,98,10,.3);padding:4px 10px;border-radius:3px;margin-right:10px;font-size:10px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
@@ -15,7 +15,7 @@ nav{height:64px;background:rgba(8,8,8,.96);border-bottom:1px solid var(--border)
 @media(max-width:850px){.hero:after{display:none}}.hero-content{position:relative;z-index:2;width:100%;padding:56px 24px}.eyebrow,.label{color:var(--fire);font-size:10px;font-weight:900;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px}h1{font-family:'Bebas Neue';font-size:clamp(68px,10vw,116px);line-height:.88;letter-spacing:4px;margin-bottom:16px}.stroke{-webkit-text-stroke:2px rgba(255,255,255,.72);color:transparent}.orange,h2 span{color:var(--fire)}.hero p{color:var(--muted);font-size:15px;line-height:1.8;max-width:650px;margin:0 auto 32px}.hero p b{color:white}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:24px}.hero-paths{max-width:900px;margin:0 auto}.hero-path-title{color:rgba(255,255,255,.86);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}.hero-paths .path-grid{grid-template-columns:repeat(4,1fr);margin-top:0}.hero-paths .path-card{background:rgba(22,22,22,.72);backdrop-filter:blur(8px);text-align:left}.hero-paths .path-card:hover{background:rgba(32,32,32,.9)}
 .ticker{background:linear-gradient(180deg,#c94e00,var(--fire) 40%,#c94e00);overflow:hidden;padding:13px 0;color:#220b00;position:relative;box-shadow:inset 0 2px 6px rgba(0,0,0,.35),inset 0 -2px 6px rgba(0,0,0,.25)}.ticker:before,.ticker:after{content:"";position:absolute;top:0;width:80px;height:100%;z-index:2;pointer-events:none}.ticker:before{left:0;background:linear-gradient(90deg,var(--fire),transparent)}.ticker:after{right:0;background:linear-gradient(-90deg,var(--fire),transparent)}.ticker-track{display:flex;white-space:nowrap;animation:ticker 20s linear infinite;font-size:10px;font-weight:900;letter-spacing:3px;text-transform:uppercase}.ticker-track span{padding-right:0}@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 section{padding:68px 0}.section-head{margin-bottom:28px}h2{font-family:'Bebas Neue';font-size:50px;letter-spacing:2px;line-height:1}.section-head p,.bodycopy{color:var(--muted);font-size:14px;line-height:1.75;max-width:750px;margin-top:12px}.dark{background:var(--black)}.panel{background:var(--d2);border:1px solid var(--border);border-radius:10px;padding:28px}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.path-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}.path-card{background:var(--d2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;transition:.2s;display:block}.path-card:hover{transform:translateY(-3px);border-color:rgba(232,98,10,.45);background:#1b1b1b}.path-card .path-label{font-size:9px;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:var(--fire2);margin-bottom:4px}.path-card h3{font-size:13px;margin-bottom:4px}.path-card p{color:var(--muted);font-size:11px;line-height:1.45}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.find{background:var(--d2)}.map-placeholder{margin-bottom:22px;border:1px dashed rgba(232,98,10,.38);border-radius:10px;background:radial-gradient(circle at center,rgba(232,98,10,.12),transparent 40%),var(--d1);padding:26px;text-align:center}.map-placeholder h3{font-family:'Bebas Neue';font-size:32px;letter-spacing:2px;margin-bottom:5px}.map-placeholder p{color:var(--muted);font-size:13px}.controls{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}input,select{background:var(--d3);border:1px solid var(--border);border-radius:6px;color:white;padding:13px 15px;font-family:'Montserrat';font-size:12px;font-weight:700;max-width:100%}input{flex:1;min-width:240px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}.chip{background:var(--d3);border:1px solid var(--border);color:var(--muted);padding:8px 13px;border-radius:4px;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;cursor:pointer}.chip.active{background:var(--fire);color:white;border-color:var(--fire)}
+.find{background:var(--d2)}.map-placeholder{margin-bottom:22px;border:1px dashed rgba(232,98,10,.38);border-radius:10px;background:radial-gradient(circle at center,rgba(232,98,10,.12),transparent 40%),var(--d1);padding:26px;text-align:center}.map-placeholder h3{font-family:'Bebas Neue';font-size:32px;letter-spacing:2px;margin-bottom:5px}.map-placeholder p{color:var(--muted);font-size:13px}.controls{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}input,select{background:var(--d3);border:1px solid var(--border);border-radius:6px;color:white;padding:13px 15px;font-family:'Montserrat';font-size:12px;font-weight:700;max-width:100%}input{flex:1;min-width:0}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}.chip{background:var(--d3);border:1px solid var(--border);color:var(--muted);padding:8px 13px;border-radius:4px;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;cursor:pointer}.chip.active{background:var(--fire);color:white;border-color:var(--fire)}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--d3);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-3px);border-color:rgba(232,98,10,.4)}.card-top{padding:18px;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:center}.initials{width:44px;height:44px;background:linear-gradient(135deg,var(--fire),#9c2500);border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:12px;flex-shrink:0}.card h3{font-size:14px}.badge-rec{position:absolute;top:10px;right:10px;background:var(--fire);color:#fff;font-size:9px;font-weight:900;letter-spacing:1px;padding:5px 7px;border-radius:3px}.loc{color:var(--muted);font-size:11px;margin-top:3px}.card-body{padding:18px}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}.tag{font-size:9px;font-weight:900;text-transform:uppercase;background:rgba(232,98,10,.14);color:var(--fire2);padding:4px 8px;border-radius:3px}.card p{color:var(--muted);font-size:12px;line-height:1.65;margin-bottom:14px}.card-actions{display:flex;gap:8px}.smallbtn{flex:1;background:var(--fire);color:white;border:0;border-radius:4px;padding:10px;font-size:10px;font-weight:900;text-transform:uppercase}.smallbtn.secondary{background:transparent;border:1px solid var(--border);color:var(--muted)}.socials{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.socials a{font-size:9px;font-weight:900;letter-spacing:1px;text-transform:uppercase;color:var(--fire2);border:1px solid rgba(232,98,10,.35);border-radius:4px;padding:6px 8px;background:rgba(232,98,10,.08)}.verify{font-size:10px;color:rgba(255,255,255,.38);line-height:1.6;margin-top:18px}
 .ignite-pulse{position:relative;z-index:1}
 .ignite-pulse:after{content:"";position:absolute;inset:-3px;border-radius:6px;box-shadow:0 0 12px rgba(232,98,10,.6);opacity:.6;animation:igniteBtnGlow 2.2s ease-in-out infinite;pointer-events:none;z-index:-1}
@@ -23,12 +23,12 @@ section{padding:68px 0}.section-head{margin-bottom:28px}h2{font-family:'Bebas Ne
 .filter-group-label{font-size:10px;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 .filter-group .chips{margin-bottom:0}
 .faqgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.faq{background:var(--d2);border:1px solid var(--border);border-radius:8px;padding:22px}.faq h3{font-size:14px;text-transform:uppercase;margin-bottom:8px}.faq p{color:var(--muted);font-size:13px;line-height:1.7}.faq-group{max-width:860px;margin-bottom:28px}.faq-group-title{display:flex;gap:14px;align-items:flex-start;border-bottom:1px solid var(--border);padding-bottom:18px;margin-bottom:4px}.faq-mark{width:44px;height:44px;border-radius:8px;background:rgba(232,98,10,.12);border:1px solid rgba(232,98,10,.25);display:flex;align-items:center;justify-content:center;color:var(--fire2);font-weight:900}.faq-group h3{font-family:'Bebas Neue';font-size:32px;letter-spacing:2px}.faq-group-title p{color:var(--muted);font-size:13px;line-height:1.6;margin-top:3px}details{border-bottom:1px solid var(--border)}summary{list-style:none;cursor:pointer;padding:19px 0;font-size:15px;font-weight:800;display:flex;justify-content:space-between;gap:16px}summary::-webkit-details-marker{display:none}summary:after{content:'⌄';width:24px;height:24px;border:1px solid var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--muted);transition:.2s}details[open] summary:after{transform:rotate(180deg);background:rgba(232,98,10,.14);border-color:rgba(232,98,10,.35)}details p{color:var(--muted);font-size:14px;line-height:1.8;padding:0 0 20px}.faq-note{background:var(--d2);border-left:3px solid var(--fire);border-radius:0 8px 8px 0;padding:22px 26px;color:var(--muted);font-size:14px;line-height:1.75}.faq-note b{color:white}
-.ignite{background:var(--black);padding-top:0}.ignite-hero{position:relative;overflow:hidden;border:1px solid rgba(232,98,10,.28);border-radius:12px;background:linear-gradient(90deg,rgba(8,8,8,.94),rgba(8,8,8,.62)),url('https://lh3.googleusercontent.com/d/1wKsI6TpOU6eu0iAJ07GAGfPI3hoDA-Rr') center/cover;min-height:480px;display:grid;grid-template-columns:1.05fr .95fr}.ignite-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 30%,rgba(232,98,10,.28),transparent 32%),linear-gradient(rgba(232,98,10,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(232,98,10,.06) 1px,transparent 1px);background-size:auto,72px 72px,72px 72px}.ignite-copy{position:relative;z-index:2;padding:46px}.ignite-title{font-family:'Bebas Neue';font-size:clamp(70px,9vw,118px);line-height:.84;letter-spacing:5px;margin:12px 0}.ignite-title span{color:var(--fire)}.ignite-copy p{color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:20px;max-width:520px}.ignite-info{display:flex;margin:24px 0 28px;border:1px solid var(--border);border-radius:8px;overflow:hidden;max-width:520px;background:rgba(0,0,0,.42)}.ignite-info div{flex:1;padding:14px 16px;border-right:1px solid var(--border);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.75)}.ignite-info div:last-child{border-right:0}.ignite-art{position:relative;min-height:430px}.ignite-art:after{content:'IGNITE';position:absolute;bottom:22px;right:24px;font-family:'Bebas Neue';font-size:96px;letter-spacing:5px;color:rgba(255,255,255,.08)}.ignite-logo-img{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(78%,360px);filter:drop-shadow(0 0 32px rgba(232,98,10,.75))}.ignite-subsections{margin-top:28px;display:grid;gap:18px}.scripture-box{border-left:3px solid var(--fire);background:var(--d2);border-radius:0 8px 8px 0;padding:24px 28px}.scripture-box p{color:rgba(255,255,255,.76);font-size:17px;font-style:italic;line-height:1.7;margin-bottom:10px}.scripture-box span{color:var(--fire2);font-size:10px;font-weight:900;letter-spacing:2px;text-transform:uppercase}.pillar-grid,.expect-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.expect-grid{grid-template-columns:repeat(2,1fr)}.ignite-panel{background:var(--d2);border:1px solid var(--border);border-radius:8px;padding:24px}.ignite-panel .num{font-family:'Bebas Neue';font-size:46px;color:rgba(232,98,10,.22);line-height:1}.ignite-panel h3{font-size:14px;text-transform:uppercase;letter-spacing:.6px;margin:4px 0 8px}.ignite-panel p{color:var(--muted);font-size:13px;line-height:1.7}.ignite-band{background:var(--d2);border:1px solid rgba(232,98,10,.24);border-radius:10px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:24px}.ignite-band p{color:var(--muted);font-size:13px;line-height:1.7;max-width:620px}.notify-form{display:flex;background:var(--d3);border:1px solid var(--border);border-radius:6px;overflow:hidden;min-width:320px}.notify-form input{border:0;background:transparent;min-width:0}.notify-form button{background:var(--fire);color:white;border:0;padding:0 18px;font-size:10px;font-weight:900;letter-spacing:1.3px;text-transform:uppercase}
+.ignite{background:var(--black);padding-top:0}.ignite-hero{position:relative;overflow:hidden;border:1px solid rgba(232,98,10,.28);border-radius:12px;background:linear-gradient(90deg,rgba(8,8,8,.94),rgba(8,8,8,.62)),url('https://lh3.googleusercontent.com/d/1wKsI6TpOU6eu0iAJ07GAGfPI3hoDA-Rr') center/cover;min-height:480px;display:grid;grid-template-columns:1.05fr .95fr}.ignite-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 30%,rgba(232,98,10,.28),transparent 32%),linear-gradient(rgba(232,98,10,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(232,98,10,.06) 1px,transparent 1px);background-size:auto,72px 72px,72px 72px}.ignite-copy{position:relative;z-index:2;padding:46px}.ignite-title{font-family:'Bebas Neue';font-size:clamp(70px,9vw,118px);line-height:.84;letter-spacing:5px;margin:12px 0}.ignite-title span{color:var(--fire)}.ignite-copy p{color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:20px;max-width:520px}.ignite-info{display:flex;margin:24px 0 28px;border:1px solid var(--border);border-radius:8px;overflow:hidden;max-width:520px;background:rgba(0,0,0,.42)}.ignite-info div{flex:1;padding:14px 16px;border-right:1px solid var(--border);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.75)}.ignite-info div:last-child{border-right:0}.ignite-art{position:relative;min-height:430px}.ignite-art:after{content:'IGNITE';position:absolute;bottom:22px;right:24px;font-family:'Bebas Neue';font-size:96px;letter-spacing:5px;color:rgba(255,255,255,.08)}.ignite-logo-img{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(78%,360px);filter:drop-shadow(0 0 32px rgba(232,98,10,.75))}.ignite-subsections{margin-top:28px;display:grid;gap:18px}.scripture-box{border-left:3px solid var(--fire);background:var(--d2);border-radius:0 8px 8px 0;padding:24px 28px}.scripture-box p{color:rgba(255,255,255,.76);font-size:17px;font-style:italic;line-height:1.7;margin-bottom:10px}.scripture-box span{color:var(--fire2);font-size:10px;font-weight:900;letter-spacing:2px;text-transform:uppercase}.pillar-grid,.expect-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.expect-grid{grid-template-columns:repeat(2,1fr)}.ignite-panel{background:var(--d2);border:1px solid var(--border);border-radius:8px;padding:24px}.ignite-panel .num{font-family:'Bebas Neue';font-size:46px;color:rgba(232,98,10,.22);line-height:1}.ignite-panel h3{font-size:14px;text-transform:uppercase;letter-spacing:.6px;margin:4px 0 8px}.ignite-panel p{color:var(--muted);font-size:13px;line-height:1.7}.ignite-band{background:var(--d2);border:1px solid rgba(232,98,10,.24);border-radius:10px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:24px}.ignite-band p{color:var(--muted);font-size:13px;line-height:1.7;max-width:620px}.notify-form{display:flex;background:var(--d3);border:1px solid var(--border);border-radius:6px;overflow:hidden;min-width:0;width:100%}.notify-form input{border:0;background:transparent;min-width:0}.notify-form button{background:var(--fire);color:white;border:0;padding:0 18px;font-size:10px;font-weight:900;letter-spacing:1.3px;text-transform:uppercase}
 .leaders{background:var(--d2)}.leader-box{border:1px solid var(--border);border-radius:8px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:24px}.leader-box p{color:var(--muted);font-size:13px;line-height:1.7;max-width:580px}.check{color:var(--fire2);font-size:11px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;margin-top:16px}footer{border-top:1px solid var(--border);padding:28px;color:rgba(255,255,255,.32);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:11px}.foot-logo{font-family:'Bebas Neue';font-size:22px;letter-spacing:4px}.foot-logo span{color:var(--fire)}
 @media(max-width:850px){nav{height:auto;min-height:64px;flex-wrap:wrap;gap:10px;padding:14px 18px}.navlinks{display:none}.navbtn{padding:10px 14px;font-size:10px}.mobile-nav{display:flex;position:sticky;top:64px;z-index:9;background:rgba(8,8,8,.96);border-bottom:1px solid var(--border);overflow-x:auto;gap:8px;padding:10px 14px}.mobile-nav a{white-space:nowrap;background:var(--d2);border:1px solid var(--border);border-radius:999px;color:white;padding:9px 13px;font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase;position:relative;z-index:20;pointer-events:auto;display:inline-block}.mobile-nav a.active{background:var(--fire);border-color:var(--fire);color:white;box-shadow:0 0 18px rgba(232,98,10,.28)}
 .mobile-nav a[data-target="ignite"]{position:relative}
 .mobile-nav a[data-target="ignite"]::after{content:"";position:absolute;inset:-2px;border-radius:999px;box-shadow:0 0 14px rgba(232,98,10,.6);opacity:.6;animation:igniteGlow 2.2s ease-in-out infinite}
-@keyframes igniteGlow{0%,100%{opacity:.4;box-shadow:0 0 10px rgba(232,98,10,.4)}50%{opacity:1;box-shadow:0 0 22px rgba(232,98,10,.85)}}.leader-box,.two{display:block}.hero-paths .path-grid{grid-template-columns:1fr 1fr}.hero-path-title{text-align:left}.grid,.faqgrid,.three,.path-grid,.pillar-grid,.expect-grid,.ignite-hero{grid-template-columns:1fr}.hero{min-height:auto}h1{font-size:52px}.ignite-copy{padding:28px}.ignite-info{display:block}.ignite-info div{border-right:0;border-bottom:1px solid var(--border)}.ignite-band{display:block}.notify-form{margin-top:16px;min-width:0}.panel{margin-bottom:16px}.contact-grid{grid-template-columns:1fr !important}.support-grid,.volunteer-grid{grid-template-columns:1fr !important}}
+@keyframes igniteGlow{0%,100%{opacity:.4;box-shadow:0 0 10px rgba(232,98,10,.4)}50%{opacity:1;box-shadow:0 0 22px rgba(232,98,10,.85)}}.leader-box,.two{display:block}.hero-paths .path-grid{grid-template-columns:1fr 1fr}.hero-path-title{text-align:left}.grid,.faqgrid,.three,.path-grid,.pillar-grid,.expect-grid,.ignite-hero{grid-template-columns:1fr}.hero{min-height:auto}h1{font-size:52px}.ignite-copy{padding:28px}.ignite-info{display:block}.ignite-info div{border-right:0;border-bottom:1px solid var(--border)}.ignite-band{display:block}.notify-form{margin-top:16px;min-width:0}.panel{margin-bottom:16px}.contact-grid{grid-template-columns:1fr !important}.support-grid,.volunteer-grid{grid-template-columns:1fr !important}input,select,textarea{width:100%;box-sizing:border-box}}
 </style>
 </head>
 <body>
@@ -312,7 +312,6 @@ const churches = [
     contact: "Jarvisburgchurch@outlook.com",
     tags: ["Grades 6–12", "Sun 6PM", "Welcoming", "Discussion + Bible"],
     description: "Youth ministry for 6th through 12th grade with Sunday youth meeting and Sunday School options.",
-    goodFit: "you want a welcoming group where you can ask questions and ease in.",
     links: {
       web: "https://www.jarvisburgchurch.com/Youth",
       fb: "https://www.facebook.com/Javisburgchurch/",
@@ -332,7 +331,6 @@ const churches = [
     contact: "",
     tags: ["Middle + High", "Flexible Schedule", "Smaller Group"],
     description: "Students have Sunday School and a youth group that meets at least twice monthly. Exact event dates should be confirmed with the church.",
-    goodFit: "you prefer a smaller, more flexible group.",
     links: {
       web: "https://ppccobx.org/kidstown/",
       fb: "https://www.facebook.com/powellspointchristianchurch/"
@@ -351,7 +349,6 @@ const churches = [
     contact: "",
     tags: ["Middle + High", "Wed 7PM", "Bible Teaching", "Community"],
     description: "Youth group for middle and high school students with Bible teaching, fellowship, and student connection.",
-    goodFit: "you want strong teaching and consistent weekly rhythm.",
     links: {
       web: "https://www.pbcshawboro.com/",
       fb: "https://www.facebook.com/PBCShawboro/"
@@ -370,7 +367,6 @@ const churches = [
     contact: "",
     tags: ["Youth", "Sun 5–6:30PM"],
     description: "Sunday afternoon youth gathering. Families should verify seasonal schedules before attending.",
-    goodFit: "",
     links: {
       web: "https://www.sawyerscreek.org/",
       fb: "https://www.facebook.com/sawyerscreekyouth/",
@@ -390,7 +386,6 @@ const churches = [
     contact: "",
     tags: ["Grades 6–12", "Sundays 6–8PM"],
     description: "NC/YOUTH is for middle and high school students who want a place to belong, grow, and explore faith together.",
-    goodFit: "",
     links: {
       web: "https://newcommunity.church/students",
       instagram: "https://www.instagram.com/newcommunitychurch/",
@@ -410,7 +405,6 @@ const churches = [
     contact: "",
     tags: ["Grades 6–12", "Wed 6:30PM"],
     description: "FOL YTH meets in a dedicated youth space for middle and high school students.",
-    goodFit: "",
     links: {
       web: "https://www.folchurch.com/elizabeth-city/",
       fb: "https://www.facebook.com/folec",
@@ -430,7 +424,6 @@ const churches = [
     contact: "",
     tags: ["Wed 6:30–7:30PM", "Sun 5:30–8PM"],
     description: "Youth Bible study on Wednesdays, plus Sunday night meal, games, worship, teaching, and small groups.",
-    goodFit: "",
     links: {
       web: "https://www.visitopendoor.com/edenton",
       fb: "https://www.facebook.com/odyouthedenton/",
@@ -450,7 +443,6 @@ const churches = [
     contact: "office@duckchurch.org",
     tags: ["Grades 6–12", "Sundays 5–7PM"],
     description: "D6 youth gathering with dinner, games, worship, a message, and small groups.",
-    goodFit: "",
     links: {
       web: "https://www.duckchurch.org/",
       fb: "https://www.facebook.com/p/Duck-Church-100064275056027/"
@@ -469,7 +461,6 @@ const churches = [
     contact: "info@fbcmoyock.com",
     tags: ["Middle + High", "Wed 6PM"],
     description: "Student Worship for middle and high school students, with biblical teaching and student ministry connection.",
-    goodFit: "",
     links: {
       web: "https://www.fbcmoyock.com/",
       fb: "https://www.facebook.com/FBCMoyock/"
@@ -488,7 +479,6 @@ const churches = [
     contact: "",
     tags: ["Ages 12–18", "Confirm Schedule"],
     description: "Youth group for ages 12–18 with serving opportunities, mission work, summer camps, and Christian concerts throughout the year.",
-    goodFit: "you want a group that goes beyond weekly meetings into real-world service and mission.",
     links: {
       web: "https://coinjock.org/youth/",
       fb: "https://www.facebook.com/coinjockbaptist/",
@@ -508,7 +498,6 @@ const churches = [
     contact: "",
     tags: ["Grades 6–12", "Fri 7:30–9:30PM", "Non-Denom", "Revival-Focused"],
     description: "FORGE (Forerunners Of Revival, Growth & Equipping) is Forerunner Church's youth ministry for 6th–12th grade students meeting Friday nights.",
-    goodFit: "you're looking for a Spirit-filled, presence-focused environment with energy and worship.",
     links: {
       web: "https://www.iforerunner.org/",
       fb: "https://www.facebook.com/forerunnerChurch/",
@@ -529,7 +518,6 @@ const churches = [
     contact: "",
     tags: ["Teen Ministry", "Sun 9AM + 10AM", "Wed 7PM", "Bible-Focused"],
     description: "Teen ministry for middle and high school students with Sunday morning youth classes and Wednesday evening Bible study. Also participates in summer camp through Roanoke Christian Camp.",
-    goodFit: "you want consistent biblical teaching in a smaller, community-rooted church.",
     links: {
       web: "https://www.thesouthmillschurch.com/teen-ministry.html",
       fb: "https://www.facebook.com/147218435323590",
@@ -549,7 +537,6 @@ const churches = [
     contact: "",
     tags: ["Grades 6–12", "Sun 6:30PM", "Worship", "Bible Teaching"],
     description: "BBSM exists to impact Elizabeth City teens with the Gospel of Christ. Sunday nights feature worship and relevant teaching from the Word of God.",
-    goodFit: "you want a Sunday night group with energetic worship and Gospel-centered teaching.",
     links: {
       web: "https://www.bereaone.org/berea-ministries",
       fb: "https://www.facebook.com/bereastudentministry/",
@@ -569,7 +556,6 @@ const churches = [
     contact: "info@forestparkchurch.com",
     tags: ["Grades 6–12", "Sun 11AM", "Bi-Monthly Events", "Community-Focused"],
     description: "FPS meets during the 11AM Sunday service in a designated student section for worship, then gathers in the lobby for community and devotion. Student events run 5-7PM every other month for connection and fun.",
-    goodFit: "you want a welcoming Sunday morning group with regular evening events to build deeper friendships.",
     links: {
       web: "https://www.forestparkchurch.com/students",
       fb: "https://www.facebook.com/forestparklive/",
@@ -590,7 +576,6 @@ const churches = [
     contact: "",
     tags: ["Youth Ministry", "Confirm Schedule"],
     description: "Grandy Assembly of God serves the Currituck County community with youth ministry programming. Contact the church directly to confirm current youth meeting times and details.",
-    goodFit: "you are in the Grandy area and looking for a Spirit-filled community close to home.",
     links: {
       web: "https://www.grandyag.org/ministries",
       fb: "https://www.facebook.com/grandyassemblyofgod/"
@@ -609,7 +594,6 @@ const churches = [
     contact: "rootedyouthobx@gmail.com",
     tags: ["Grades 6–12", "MS: Wed 6PM", "HS: Sun 6–8PM", "Tue 6:30PM"],
     description: "Rooted Youth exists to encourage, empower, and equip middle and high school students to love God, love others, and live on mission. Middle school meets Wednesdays at the YMCA in Nags Head. High school meets Sunday nights 6-8PM and Tuesday nights 6:30-8:30PM.",
-    goodFit: "you want an active group with multiple meeting options and a strong sense of mission and community.",
     links: {
       web: "https://churchobx.com/obx-youth/",
       fb: "https://www.facebook.com/CHOBXYouth",
@@ -630,7 +614,6 @@ const churches = [
     contact: "nhcfec@gmail.com",
     tags: ["Youth Group", "Confirm Schedule", "Non-Denom"],
     description: "New Hope Christian Fellowship is a non-denominational church in Elizabeth City with an active youth group. Contact the church directly to confirm current youth meeting times and details.",
-    goodFit: "you are looking for a non-denominational, Spirit-filled community in the Elizabeth City area.",
     links: {
       web: "https://nhcfec.org/",
       fb: "https://www.facebook.com/nhcfec/",
@@ -679,8 +662,7 @@ function haversine(lat1,lon1,lat2,lon2){
 function buildCard(church, distMi) {
   const badgeHTML = church.badge ? `<div class="badge-rec">${church.badge}</div>` : '';
   const tagsHTML = church.tags.map(t => `<span class="tag">${t}</span>`).join('');
-  const goodFitHTML = church.goodFit
-    ? `<p style="margin-top:8px;font-size:11px;color:#aaa"><b>Good fit if:</b> ${church.goodFit}</p>` : '';
+  const goodFitHTML = '';
   const distHTML = distMi != null
     ? `<span style="font-size:10px;color:var(--fire2);font-weight:900;margin-left:6px">~${Math.round(distMi)} mi</span>` : '';
   const linkLabels = { web:'Web', fb:'FB', instagram:'IG', youtube:'YouTube' };
@@ -711,7 +693,7 @@ function buildCard(church, distMi) {
       </div>
       <div class="card-body">
         <div class="tags">${tagsHTML}</div>
-        <p>${church.description}${goodFitHTML}</p>
+        <p>${church.description}</p>
         ${church.contact
           ? `<div class="card-actions">
               <a class="smallbtn" href="mailto:${church.contact}?subject=NextGen NENC — Youth Group Visit Inquiry&body=Hi%2C%0A%0AI found your youth group on NextGen NENC and my student is interested in visiting. Could you tell us more about what to expect on a first visit%3F%0A%0AThank you!">Message Leader</a>
