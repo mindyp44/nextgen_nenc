@@ -310,12 +310,14 @@ const churches = [
     badge: "Great First Visit",
     photo: "",
     contact: "Jarvisburgchurch@outlook.com",
-    tags: ["Grades 6–12", "Sun 6PM", "Welcoming", "Discussion + Bible"],
-    description: "Youth ministry for 6th through 12th grade with Sunday youth meeting and Sunday School options.",
+    tags: ["Grades 6–12", "Sun 6PM", "Welcoming", "Discussion + Bible", "Christian School K-12"],
+    description: "Youth ministry for 6th through 12th grade with Sunday youth meeting and Sunday School options. The church also operates Jarvisburg Christian Academy, a K-12 private Christian school on the same campus using Abeka and BJU Press curriculum.",
     links: {
       web: "https://www.jarvisburgchurch.com/Youth",
       fb: "https://www.facebook.com/Javisburgchurch/",
-      youtube: "https://www.youtube.com/@jarvisburgchurch"
+      instagram: "https://www.instagram.com/jccyouth252/",
+      youtube: "https://www.youtube.com/@jarvisburgchurch",
+      school: "https://jarvisburgchristianacademy.com/"
     }
   },
   {
@@ -343,15 +345,17 @@ const churches = [
     lon: -76.0891,
     location: "Shawboro · Currituck Co.",
     county: "Currituck",
-    filters: "middle high wednesday shawboro providence",
+    filters: "middle high sunday shawboro providence",
     badge: "",
     photo: "",
-    contact: "",
-    tags: ["Middle + High", "Wed 7PM", "Bible Teaching", "Community"],
-    description: "Youth group for middle and high school students with Bible teaching, fellowship, and student connection.",
+    contact: "office@pbcshawboro.com",
+    tags: ["Grades 6–12", "Sun School AM", "Sun Eve 5:30–7:30PM", "Dinner Included"],
+    description: "Sunday morning Sunday School for middle and high school students, plus Sunday evenings with choir, games, activities, a lesson, and dinner. All 6th-12th graders welcome.",
     links: {
-      web: "https://www.pbcshawboro.com/",
-      fb: "https://www.facebook.com/PBCShawboro/"
+      web: "https://www.pbcshawboro.com/ministries/youth-ministry",
+      fb: "https://www.facebook.com/PBCShawboro/",
+      instagram: "https://www.instagram.com/pbc_shawboro/",
+      youtube: "https://www.youtube.com/@PBCShawboro"
     }
   },
   {
@@ -619,6 +623,25 @@ const churches = [
       fb: "https://www.facebook.com/nhcfec/",
       instagram: "https://www.instagram.com/nhcfec/"
     }
+  },
+  {
+    initials: "NLA",
+    name: "New Life Assembly of God",
+    location: "Elizabeth City · Pasquotank Co.",
+    county: "Pasquotank",
+    lat: 36.3021,
+    lon: -76.2318,
+    filters: "elizabeth city pasquotank new life assembly",
+    badge: "",
+    photo: "",
+    contact: "",
+    tags: ["Christian School K-12", "Assembly of God"],
+    description: "New Life Assembly of God is an Assemblies of God church in Elizabeth City. The church operates New Life Academy, a K-12 private Christian school serving over 250 students using Abeka and Bob Jones curriculum. They do not currently have a standalone youth group.",
+    links: {
+      web: "https://www.newlifeassemblyec.com/",
+      fb: "https://www.facebook.com/newlifeassemblyec/",
+      school: "https://www.newlifeacademyec.com/"
+    }
   }
 ];
 
@@ -665,7 +688,7 @@ function buildCard(church, distMi) {
   const goodFitHTML = '';
   const distHTML = distMi != null
     ? `<span style="font-size:10px;color:var(--fire2);font-weight:900;margin-left:6px">~${Math.round(distMi)} mi</span>` : '';
-  const linkLabels = { web:'Web', fb:'FB', instagram:'IG', youtube:'YouTube' };
+  const linkLabels = { web:'Web', fb:'FB', instagram:'IG', youtube:'YouTube', school:'School' };
   const socialsHTML = Object.entries(church.links||{}).filter(([,url])=>url)
     .map(([key,url])=>`<a href="${url}" target="_blank">${linkLabels[key]||key}</a>`).join('');
 
